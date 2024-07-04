@@ -1,7 +1,7 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./pages/Home/Home";
 
-import { useEffect, useState, createContext } from "react";
+import {  useState, createContext } from "react";
 import axios from "./Api/axiosConfig";
 import Askquestion from "./pages/AskquestionsPage/Askquestion";
 import QuestionDetail from "./pages/QuestiondescPage/QuestionDetail";
@@ -15,19 +15,19 @@ function App() {
 
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
-  async function checkUser() {
-    try {
-      const { data } = await axios.get("users/check", {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      });
-      setuser(data);
-    } catch (error) {
-      console.log(error.response);
-      navigate("/");
-    }
-  }
+  // async function checkUser() {
+  //   try {
+  //     const { data } = await axios.get("users/check", {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+  //       },
+  //     });
+  //     setuser(data);
+  //   } catch (error) {
+  //     console.log(error.response);
+  //     navigate("/");
+  //   }
+  // }
 
 
   return (
