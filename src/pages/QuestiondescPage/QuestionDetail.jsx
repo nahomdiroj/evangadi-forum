@@ -7,7 +7,7 @@ import "./QuestionDetail.css";
 import { toast } from "react-toastify";
 
 const QuestionDetail = () => {
-  const navigate = useNavigate();
+
   const answert = useRef();
   const { questionid } = useParams();
   const [questionDesc, setQuestionDesc] = useState([]);

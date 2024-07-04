@@ -1,21 +1,21 @@
 import React, { useRef, useState } from "react";
 import axios from "../../Api/axiosConfig";
-import {useNavigate, Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import classes from './Register.module.css'
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
 
 function Register({setIsLogin}) {
-  const navigate = useNavigate()
+
   const userNameDom = useRef();
   const firstnameDom = useRef();
   const lastnameDom = useRef();
   const emailDom = useRef();
   const passwordDom = useRef();
-  const [isLoading, setIsLoading] = useState(false);
+
   const [isVisible, setIsVisible] = useState(false)
   
   const toggleVisibility = () =>{

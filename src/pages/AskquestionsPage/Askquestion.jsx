@@ -1,6 +1,6 @@
 
 import React, { useRef, useState } from "react";
-import LayOut from "../../Components/Layout/Layout";
+
 import { Link, useNavigate } from "react-router-dom";
 import axios from "../../Api/axiosConfig";
 import Loader from "../../Components/Loader/Loader";
