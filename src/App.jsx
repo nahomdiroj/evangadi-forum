@@ -29,9 +29,7 @@ function App() {
     }
   }
 
-  // useEffect(() => {
-  //   checkUser();
-  // }, []);
+
   return (
     <AppState.Provider value={{ user, setuser }}>
       <LayOut>

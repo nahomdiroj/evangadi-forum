@@ -15,33 +15,33 @@ const QuestionDetail = () => {
   const [isLoading, setIsLoading] = useState(false);
   const token = localStorage.getItem("token");
 
-  async function questionasked() {
-    try {
-      const result = await axios.get(`/questions/${questionid}`, {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      });
-      // console.log(result.data)
-      setQuestionDesc(result.data);
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
+  // async function questionasked() {
+  //   try {
+  //     const result = await axios.get(`/questions/${questionid}`, {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+  //       },
+  //     });
+  //     // console.log(result.data)
+  //     setQuestionDesc(result.data);
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // }
 
-  async function answeredQuestion() {
-    try {
-      const result = await axios.get(`/answers/answers/${questionid}`, {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      });
-      // console.log(result.data)
-      setAnswered(result.data);
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
+  // async function answeredQuestion() {
+  //   try {
+  //     const result = await axios.get(`/answers/answers/${questionid}`, {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+  //       },
+  //     });
+  //     // console.log(result.data)
+  //     setAnswered(result.data);
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // }
 
   useEffect(() => {
     questionasked();
