@@ -1,17 +1,17 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext,  useState } from "react";
 import { AppState } from "../../App";
-import axios from "../../Api/axiosConfig";
+// import axios from "../../Api/axiosConfig";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 import userImg from "../../assets/images/user.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 function Home() {
   const navigate = useNavigate();
   const { user } = useContext(AppState);
-  const token = localStorage.getItem("token");
+  // const token = localStorage.getItem("token");
   const [values, setValues] = useState([]);
   // useEffect(() => {
   //   if (!token) {

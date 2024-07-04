@@ -24,14 +24,14 @@ function Header() {
   //   const token = localStorage.getItem("token");
   //   setAuthenticate(true);
   // }, []);
-  console.log(user.msg);
-  const logout = () => {
-    localStorage.removeItem("token");
-    setAuthenticate(false);
+  // console.log(user.msg);
+  // const logout = () => {
+  //   localStorage.removeItem("token");
+  //   setAuthenticate(false);
 
-    navigate("/");
-    window.location.reload();
-  };
+  //   navigate("/");
+  //   window.location.reload();
+  // };
 
   return (
     <section className={classes.fixed}>

@@ -11,8 +11,8 @@ export const AppState = createContext();
 function App() {
   const [user, setuser] = useState({});
 
-  const token = localStorage.getItem("token");
-  const navigate = useNavigate();
+  // const token = localStorage.getItem("token");
+  // const navigate = useNavigate();
   // async function checkUser() {
   //   try {
   //     const { data } = await axios.get("users/check", {
