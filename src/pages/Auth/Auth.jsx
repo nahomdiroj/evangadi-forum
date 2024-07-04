@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import React, {  useState } from "react";
+
 import LogIn from "../Login/Login";
 import Register from "../Register/Register";
 import classes from "./Auth.module.css";

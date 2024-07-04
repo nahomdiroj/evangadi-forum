@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Loader from "../../Components/Loader/Loader";
 import classes from "./Login.module.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Login({ setIsLogin }) {

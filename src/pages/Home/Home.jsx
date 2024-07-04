@@ -13,26 +13,26 @@ function Home() {
   const { user } = useContext(AppState);
   const token = localStorage.getItem("token");
   const [values, setValues] = useState([]);
-  useEffect(() => {
-    if (!token) {
-      toast.warning("Please Login");
-      navigate("/");
-      return;
-    }
-    axios
-      .get("/questions/all-questions/", {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      })
-      .then((res) => {
-        setValues(res.data);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [token]);
+  // useEffect(() => {
+  //   if (!token) {
+  //     toast.warning("Please Login");
+  //     navigate("/");
+  //     return;
+  //   }
+  //   axios
+  //     .get("/questions/all-questions/", {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+  //       },
+  //     })
+  //     .then((res) => {
+  //       setValues(res.data);
+  //       console.log(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, [token]);
 
   const handleClick = (questionid) => {
     navigate(`/answerquestions/${questionid}`);

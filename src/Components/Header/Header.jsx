@@ -1,14 +1,14 @@
 
 
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Logo from "../../assets/images/0004.png";
 import classes from "./Header.module.css";
 import { Link, useNavigate } from "react-router-dom";
 // import { DataContext } from "../DataProvider/DataProvider";
 import { AppState } from "../../App";
 
-import { RiMenu3Line } from "react-icons/ri";
+
 
 
 
@@ -18,7 +18,7 @@ function Header() {
   // const [{ signState }, dispatch] = useContext(DataContext);
   const { user } = useContext(AppState);
   const [authenticate, setAuthenticate] = useState(false);
-  const token = localStorage.getItem("token");
+
 
   // useEffect(() => {
   //   const token = localStorage.getItem("token");
@@ -46,7 +46,7 @@ function Header() {
           <div className={classes.right_side}>
             <Link to={"/home"}>Home</Link>
             <Link to={"#"}>How it Works</Link>
-
+{/* 
             {user.msg == "Authentication invalid-1" ||
             user.msg == "Authentication invalid-2" ? (
               <button className={classes.log_button}>LogIn</button>
@@ -54,7 +54,7 @@ function Header() {
               <button className={classes.log_button} onClick={logout}>
                 Log Out
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </section>
