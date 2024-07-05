@@ -14,10 +14,10 @@ import { AppState } from "../../App";
 
 
 function Header() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const [{ signState }, dispatch] = useContext(DataContext);
-  const { user } = useContext(AppState);
-  const [authenticate, setAuthenticate] = useState(false);
+  // const { user } = useContext(AppState);
+  // const [authenticate, setAuthenticate] = useState(false);
 
 
   // useEffect(() => {
