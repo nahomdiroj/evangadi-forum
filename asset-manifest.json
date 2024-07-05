@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/evangadi-forum/static/css/main.2622fa75.css",
+    "main.js": "/evangadi-forum/static/js/main.388e2ba7.js",
+    "static/media/user.jpg": "/evangadi-forum/static/media/user.0bd48c8718cdbd97efbb.jpg",
+    "static/media/0002.svg": "/evangadi-forum/static/media/0002.192609b8540a56a36a47.svg",
+    "index.html": "/evangadi-forum/index.html",
+    "main.2622fa75.css.map": "/evangadi-forum/static/css/main.2622fa75.css.map",
+    "main.388e2ba7.js.map": "/evangadi-forum/static/js/main.388e2ba7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2622fa75.css",
+    "static/js/main.388e2ba7.js"
+  ]
+}
